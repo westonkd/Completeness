@@ -1,0 +1,54 @@
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+
+#+TITLE: Completeness: 3Color
+#+AUTHOR: Weston Dransfield
+
+* Description
+
+#+BEGIN_LaTex
+\textbf{\textit{3COLOR}} = \{\(\langle G \rangle\) | the nodes of G can be colored with three colors such that no two adjacent nodes are the same color \}
+#+END_LaTeX
+
+* Example
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=7cm]{uncolored.jpg}
+\end{center}
+#+END_LaTeX
+
+* Example
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=7cm]{colored.png}
+\end{center}
+#+END_LaTeX
+
+
+* The Problem
+#+BEGIN_LaTeX
+Is a given graph \(G\) a member of the \textbf{\textit{3COLOR}}?
+
+\begin{itemize}
+\item<2-> This is tough to decide, but easy to verify!
+\end{itemize}
+#+END_LaTeX
+
+* The Verifier
+#+BEGIN_LaTeX
+\(V\) = "On input \(\langle G, c \rangle\),
+\begin{enumerate}
+\item<1-> Check that c includes 3 colors.
+\item<2-> Color each node of G as specified by c.
+\item<3-> For each node, check that each adjacent node is not the same color.
+\item<4-> If all checks pass accept, otherwise reject."
+\end{enumerate}
+
+\begin{itemize}
+\item<5->Step 3 has largest time complexity of \(O(n^2)\). 3COLOR is in NP because it can be verified in polynomial time.
+\end{itemize}
+#+END_LaTex
+
+

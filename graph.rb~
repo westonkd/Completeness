@@ -1,0 +1,12 @@
+class Graph
+  attr_reader :nodes
+
+  def initialize(nodeCount)
+    #create a new random set of nodes
+  end
+
+  private
+
+  def randomize(nodeCount)
+  end
+end
