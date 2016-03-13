@@ -1,4 +1,4 @@
-% Created 2016-03-12 Sat 15:28
+% Created 2016-03-12 Sat 17:42
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -50,7 +50,7 @@
 
 
 \begin{frame}[label=sec-4]{The Problem}
-Is a given graph \(G\) a member of the language \textbf{\textit{3COLOR}}?
+Is a given graph \(G\) a member of the \textbf{\textit{3COLOR}}?
 
 \begin{itemize}
 \item<2-> This is tough to decide, but easy to verify!
@@ -69,6 +69,78 @@ Is a given graph \(G\) a member of the language \textbf{\textit{3COLOR}}?
 \begin{itemize}
 \item<5->Step 3 has largest time complexity of \(O(n^2)\). 3COLOR is in NP because it can be verified in polynomial time.
 \end{itemize}
+\end{frame}
+
+
+\begin{frame}[label=sec-6]{Constructing the Reduction}
+Construct a transformation \(f\) from \(3SAT\) to \(3COLOR\).
+\begin{enumerate}
+\item<2-> Establish Truthiness
+\item<3-> Force variables to be true or false
+\item<4-> Use these subgraphs to create a graph that is 3 colorable iff variables are satisfiable
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[label=sec-7]{Constructing the Reduction - Truthiness}
+\begin{center}
+\includegraphics[width=7cm]{Truthiness.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label=sec-8]{Constructing the Reduction - Variables}
+\begin{center}
+\includegraphics[width=7cm]{Variable1.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label=sec-9]{Constructing the Reduction - Variables}
+\begin{center}
+\includegraphics[width=7cm]{Variable2.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label=sec-10]{Constructing the Reduction - OR}
+\begin{center}
+\includegraphics[width=7cm]{Or1.png}
+\end{center}
+
+\[x\vee y\]
+\end{frame}
+
+\begin{frame}[label=sec-11]{Constructing the Reduction - OR}
+\begin{center}
+\includegraphics[width=10cm]{Or2.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label=sec-12]{Constructing the Reduction - Clause}
+\begin{center}
+\includegraphics[width=10cm]{Comb1.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label=sec-13]{Constructing the Reduction - Clause}
+\begin{center}
+\includegraphics[width=10cm]{Comb2.png}
+\end{center}
+
+\[x\vee y \vee z\] 
+\end{frame}
+
+\begin{frame}[label=sec-14]{Transformation}
+How to construct the transformation
+\end{frame}
+
+\begin{frame}[label=sec-15]{Transformation - Forward}
+Forward proof
+\end{frame}
+
+\begin{frame}[label=sec-16]{Transformation - Backward}
+Backwards proof
+\end{frame}
+
+\begin{frame}[label=sec-17]{Transformation - P}
+poly time?
 \end{frame}
 % Emacs 24.5.1 (Org mode 8.2.10)
 \end{document}

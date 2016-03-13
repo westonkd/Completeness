@@ -52,3 +52,82 @@ Is a given graph \(G\) a member of the \textbf{\textit{3COLOR}}?
 #+END_LaTex
 
 
+* Constructing the Reduction
+#+BEGIN_LaTex
+Construct a transformation \(f\) from \(3SAT\) to \(3COLOR\).
+\begin{enumerate}
+\item<2-> Establish Truthiness
+\item<3-> Force variables to be true or false
+\item<4-> Use these subgraphs to create a graph that is 3 colorable iff variables are satisfiable
+\end{enumerate}
+#+END_LaTeX
+
+* Constructing the Reduction - Truthiness
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=7cm]{Truthiness.png}
+\end{center}
+#+END_LaTeX
+
+* Constructing the Reduction - Variables
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=7cm]{Variable1.png}
+\end{center}
+#+END_LaTeX
+
+* Constructing the Reduction - Variables
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=7cm]{Variable2.png}
+\end{center}
+#+END_LaTeX
+
+* Constructing the Reduction - OR
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=7cm]{Or1.png}
+\end{center}
+
+\[x\vee y\]
+#+END_LaTeX
+
+* Constructing the Reduction - OR
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=10cm]{Or2.png}
+\end{center}
+
+#+END_LaTeX
+
+* Constructing the Reduction - Clause
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=10cm]{Comb1.png}
+\end{center}
+
+#+END_LaTeX
+
+* Constructing the Reduction - Clause
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=10cm]{Comb2.png}
+\end{center}
+
+\[x\vee y \vee z\] 
+#+END_LaTeX
+
+* Transformation
+How to construct the transformation
+
+* Transformation - Forward
+Forward proof
+
+* Transformation - Backward
+Backwards proof
+
+* Transformation - P
+poly time? See small.ppt
+
+* Sources
+
