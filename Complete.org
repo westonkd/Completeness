@@ -117,6 +117,13 @@ Construct a transformation \(f\) from \(3SAT\) to \(3COLOR\).
 \[x\vee y \vee z\] 
 #+END_LaTeX
 
+* 
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=12cm]{bats.png}
+\end{center}
+#+END_LaTeX
+
 * Transformation
 How to construct the transformation
 
