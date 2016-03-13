@@ -125,7 +125,20 @@ Construct a transformation \(f\) from \(3SAT\) to \(3COLOR\).
 #+END_LaTeX
 
 * Transformation
-How to construct the transformation
+TODO: Formal write it\\
+#+BEGIN_LaTeX
+\begin{enumerate}
+\item<1-> Construct the truthiness subgraph \(T\)\\
+\item<2-> For each clause add a 3 way OR gate subgraph \(O_i\)\\
+\item<3-> Connect the "output" node of \(O_i\) to both the "false" and "unused" nodes of \(T\)
+\item<4-> For each variable in the Boolean statement:
+\end{enumerate}
+\begin{itemize}
+\item<5-> Add nodes \(v\) and \(v_0\) connected by an edge
+\item<6-> Connect nodes \(v\) and \(v_0\) to the "unused" end of \(t\)
+\item<7-> Connect node \(v_0\) to one input of the clause's 3 way OR gate \(O_i\)
+\end{itemize}
+#+END_LaTeX
 
 * Transformation - Forward
 Forward proof

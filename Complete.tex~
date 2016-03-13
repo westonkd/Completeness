@@ -1,4 +1,4 @@
-% Created 2016-03-12 Sat 18:24
+% Created 2016-03-12 Sat 18:51
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -129,14 +129,23 @@ Construct a transformation \(f\) from \(3SAT\) to \(3COLOR\).
 
 \begin{frame}[label=sec-14]{}
 \begin{center}
-\includegraphics[width=10cm]{bats.png}
+\includegraphics[width=12cm]{bats.png}
 \end{center}
-
-\[x\vee y \vee z\] 
 \end{frame}
 
 \begin{frame}[label=sec-15]{Transformation}
-How to construct the transformation
+TODO: Formal write it\\
+\begin{enumerate}
+\item<1-> Construct the truthiness subgraph \(T\)\\
+\item<2-> For each clause add a 3 way OR gate subgraph \(O_i\)\\
+\item<3-> Connect the "output" node of \(O_i\) to both the "false" and "unused" nodes of \(T\)
+\item<4-> For each variable in the Boolean statement:
+\end{enumerate}
+\begin{itemize}
+     \item<5-> Add nodes \(v\) and \(v_0\) connected by an edge
+     \item<6-> Connect nodes \(v\) and \(v_0\) to the "unused" end of \(t\)
+     \item<7-> Connect node \(v_0\) to one input of the clause's 3 way OR gate \(O_i\)
+\end{itemize}
 \end{frame}
 
 \begin{frame}[label=sec-16]{Transformation - Forward}
