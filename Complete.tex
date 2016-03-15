@@ -1,4 +1,4 @@
-% Created 2016-03-12 Sat 18:52
+% Created 2016-03-14 Mon 20:09
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -19,7 +19,7 @@
 \usetheme{default}
 \author{Weston Dransfield}
 \date{\today}
-\title{Completeness: 3Color}
+\title{Completeness: 3COLOR}
 \hypersetup{
   pdfkeywords={},
   pdfsubject={},
@@ -73,7 +73,7 @@ Is a given graph \(G\) a member of the \textbf{\textit{3COLOR}}?
 
 
 \begin{frame}[label=sec-6]{Constructing the Reduction}
-Construct a transformation \(f\) from \(3SAT\) to \(3COLOR\).
+Construct a transformation \(T\) from \(3SAT\) to \(3COLOR\).
 \begin{enumerate}
 \item<2-> Establish Truthiness
 \item<3-> Force variables to be true or false
@@ -123,8 +123,6 @@ Construct a transformation \(f\) from \(3SAT\) to \(3COLOR\).
 \begin{center}
 \includegraphics[width=10cm]{Comb2.png}
 \end{center}
-
-\[x\vee y \vee z\] 
 \end{frame}
 
 \begin{frame}[label=sec-14]{}
@@ -134,33 +132,50 @@ Construct a transformation \(f\) from \(3SAT\) to \(3COLOR\).
 \end{frame}
 
 \begin{frame}[label=sec-15]{Transformation}
-TODO: Formal write it\\
+\(T\) = "On input \(\langle S \rangle\),
 \begin{enumerate}
 \item<1-> Construct the truthiness subgraph \(T\)\\
-\item<2-> For each clause add a 3 way OR gate subgraph \(O_i\)\\
+\item<2-> For each clause in \(S\) add a 3 way OR gate subgraph \(O_i\)\\
 \item<3-> Connect the "output" node of \(O_i\) to both the "false" and "unused" nodes of \(T\)
-\item<4-> For each variable in the Boolean statement:
+\item<4-> For each variable in the \(S\):
 \end{enumerate}
 \begin{itemize}
-\item<5->      Add nodes \(v\) and \(v_0\) connected by an edge
-\item<6->      Connect nodes \(v\) and \(v_0\) to the "unused" end of \(t\)
-\item<7->      Connect node \(v_0\) to one input of the clause's 3 way OR gate \(O_i\)
+\item<5-> Add nodes \(v\) and \(v_0\) connected by an edge
+\item<6-> Connect nodes \(v\) and \(v_0\) to the "unused" end of \(t\)
+\item<7-> Connect node \(v_0\) to one input of the clause's 3 way OR gate \(O_i\)"
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label=sec-16]{Transformation - Forward}
-Forward proof
+\begin{frame}[label=sec-16]{Example}
+\[
+(u \vee \neg v \vee w) \wedge (v \vee x \vee \neg y)
+\]
 \end{frame}
 
-\begin{frame}[label=sec-17]{Transformation - Backward}
-Backwards proof
+\begin{frame}[label=sec-17]{Transformation - Forward}
+\begin{center}
+\includegraphics[width=8cm]{Comb2.png}
+\end{center}
 \end{frame}
 
-\begin{frame}[label=sec-18]{Transformation - P}
-poly time? See small.ppt
+\begin{frame}[label=sec-18]{Transformation - Backward}
+\begin{center}
+\includegraphics[width=8cm]{Comb2.png}
+\end{center}
 \end{frame}
 
-\begin{frame}[label=sec-19]{Sources}
+\begin{frame}[label=sec-19]{Transformation - Polynomial Time}
+\begin{itemize}
+\item<1-> Truthiness nodes - \(O(1)\)
+\item<2-> Variable T/F nodes - \(O(1)\)
+\item<3-> \(O(n)\) for \(n\) clauses
+\item<4-> Overall - \(O(n)\)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-20]{Sources}
+\url{http://web.stanford.edu/class/archive/cs/cs103/cs103.1132/lectures/27/Small27.pdf}
+\url{http://www.cs.princeton.edu/courses/archive/spring07/cos226/lectures/23Reductions.pdf}
 \end{frame}
 % Emacs 24.5.1 (Org mode 8.2.10)
 \end{document}

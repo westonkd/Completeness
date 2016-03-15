@@ -3,7 +3,7 @@
 #+LaTeX_CLASS_OPTIONS: [bigger]
 #+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
 
-#+TITLE: Completeness: 3Color
+#+TITLE: Completeness: 3COLOR
 #+AUTHOR: Weston Dransfield
 
 * Description
@@ -54,7 +54,7 @@ Is a given graph \(G\) a member of the \textbf{\textit{3COLOR}}?
 
 * Constructing the Reduction
 #+BEGIN_LaTex
-Construct a transformation \(f\) from \(3SAT\) to \(3COLOR\).
+Construct a transformation \(T\) from \(3SAT\) to \(3COLOR\).
 \begin{enumerate}
 \item<2-> Establish Truthiness
 \item<3-> Force variables to be true or false
@@ -114,7 +114,6 @@ Construct a transformation \(f\) from \(3SAT\) to \(3COLOR\).
 \includegraphics[width=10cm]{Comb2.png}
 \end{center}
 
-\[x\vee y \vee z\] 
 #+END_LaTeX
 
 * 
@@ -125,29 +124,56 @@ Construct a transformation \(f\) from \(3SAT\) to \(3COLOR\).
 #+END_LaTeX
 
 * Transformation
-TODO: Formal write it\\
 #+BEGIN_LaTeX
+\(T\) = "On input \(\langle S \rangle\),
 \begin{enumerate}
 \item<1-> Construct the truthiness subgraph \(T\)\\
-\item<2-> For each clause add a 3 way OR gate subgraph \(O_i\)\\
+\item<2-> For each clause in \(S\) add a 3 way OR gate subgraph \(O_i\)\\
 \item<3-> Connect the "output" node of \(O_i\) to both the "false" and "unused" nodes of \(T\)
-\item<4-> For each variable in the Boolean statement:
+\item<4-> For each variable in the \(S\):
 \end{enumerate}
 \begin{itemize}
 \item<5-> Add nodes \(v\) and \(v_0\) connected by an edge
 \item<6-> Connect nodes \(v\) and \(v_0\) to the "unused" end of \(t\)
-\item<7-> Connect node \(v_0\) to one input of the clause's 3 way OR gate \(O_i\)
+\item<7-> Connect node \(v_0\) to one input of the clause's 3 way OR gate \(O_i\)"
 \end{itemize}
 #+END_LaTeX
 
+* Example
+#+BEGIN_LaTeX
+\[
+(u \vee \neg v \vee w) \wedge (v \vee x \vee \neg y)
+\]
+#+END_LaTeX
+
 * Transformation - Forward
-Forward proof
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=8cm]{Comb2.png}
+\end{center}
+
+
+#+END_LaTeX
 
 * Transformation - Backward
-Backwards proof
+#+BEGIN_LaTeX
+\begin{center}
+\includegraphics[width=8cm]{Comb2.png}
+\end{center}
 
-* Transformation - P
-poly time? See small.ppt
+
+#+END_LaTeX
+
+* Transformation - Polynomial Time
+#+BEGIN_LaTeX
+\begin{itemize}
+\item<1-> Truthiness nodes - \(O(1)\)
+\item<2-> Variable T/F nodes - \(O(1)\)
+\item<3-> \(O(n)\) for \(n\) clauses
+\item<4-> Overall - \(O(n)\)
+\end{itemize}
+#+END_LaTeX
 
 * Sources
-
+[[http://web.stanford.edu/class/archive/cs/cs103/cs103.1132/lectures/27/Small27.pdf]]
+[[http://www.cs.princeton.edu/courses/archive/spring07/cos226/lectures/23Reductions.pdf]]
