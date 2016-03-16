@@ -1,4 +1,4 @@
-% Created 2016-03-15 Tue 22:15
+% Created 2016-03-16 Wed 12:29
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -105,15 +105,16 @@ Construct a transformation \(T\) from \(3SAT\) to \(3COLOR\).
 \end{center}
 
 Output node is colored false if both input nodes are colored false
-\begin{itemize}
-\item <1-> Need to attach to truthiness gadget
-\end{itemize}
 \end{frame}
 
 \begin{frame}[label=sec-11]{Constructing the Reduction - OR}
 \begin{center}
 \includegraphics[width=10cm]{Or2.png}
 \end{center}
+
+\begin{itemize}
+\item <1-> Need to attach to truthiness gadget
+\end{itemize}
 \end{frame}
 
 \begin{frame}[label=sec-12]{Constructing the Reduction - Clause}
@@ -141,7 +142,7 @@ Transform expression \(S\) to graph \(G_s\)
 \item<1-> Construct the truthiness subgraph \(T\)\\
 \item<2-> For each clause in \(S\) add a 3 way OR gate subgraph \(O_i\)\\
 \item<3-> Connect the "output" node of \(O_i\) to both the "false" and "unused" nodes of \(T\)
-\item<4-> For each variable in the \(S\):
+\item<4-> For each variable in \(S\):
 \end{enumerate}
 \begin{itemize}
 \item<5-> Add nodes \(v\) and \(v_0\) connected by an edge
