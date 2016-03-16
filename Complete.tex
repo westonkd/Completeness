@@ -1,4 +1,4 @@
-% Created 2016-03-15 Tue 10:55
+% Created 2016-03-16 Wed 09:37
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -50,7 +50,7 @@
 
 
 \begin{frame}[label=sec-4]{The Problem}
-Is a given graph \(G\) a member of the \textbf{\textit{3COLOR}}?
+Is a given graph \(G\) a member of \textbf{\textit{3COLOR}}?
 
 \begin{itemize}
 \item<2-> This is tough to decide, but easy to verify!
@@ -104,7 +104,10 @@ Construct a transformation \(T\) from \(3SAT\) to \(3COLOR\).
 \includegraphics[width=7cm]{Or1.png}
 \end{center}
 
-\[x\vee y\]
+Output node is colored false if both input nodes are colored false
+\begin{itemize}
+\item <1-> Need to attach to truthiness gadget
+\end{itemize}
 \end{frame}
 
 \begin{frame}[label=sec-11]{Constructing the Reduction - OR}
@@ -143,7 +146,7 @@ Transform expression \(S\) to graph \(G_s\)
 \begin{itemize}
 \item<5-> Add nodes \(v\) and \(v_0\) connected by an edge
 \item<6-> Connect nodes \(v\) and \(v_0\) to the "unused" end of \(t\)
-\item<7-> Connect the corresponding node (\(v_0\) or \(v_v\)) to one input of the clause's 3 way OR gate \(O_i\)"
+\item<7-> Connect the corresponding node (\(v_0\) or \(v\)) to one input of the clause's 3 way OR gate \(O_i\)"
 \end{itemize}
 \end{frame}
 
@@ -174,7 +177,7 @@ If graph \(G_s\) is 3 colorable, \(S\) is satisfiable
 \begin{frame}[label=sec-19]{Transformation - Polynomial Time}
 \begin{itemize}
 \item<1-> Truthiness nodes - \(O(1)\)
-\item<2-> Variable T/F nodes - \(O(1)\)
+\item<2-> Variable T/F nodes - \(O(n)\)
 \item<3-> \(O(n)\) for \(n\) clauses
 \item<4-> Overall - \(O(n)\)
 \end{itemize}
