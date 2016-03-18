@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 MAR 2016 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 MAR 2016 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Complete.tex
-(./Complete.tex
+**CA.tex
+(./CA.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1164,8 +1164,8 @@ Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
-(./Complete.aux)
-\openout1 = `Complete.aux'.
+No file CA.aux.
+\openout1 = `CA.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
@@ -1183,7 +1183,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 27.
@@ -1265,10 +1265,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 27.
 LaTeX Info: Redefining \pageref on input line 27.
 LaTeX Info: Redefining \nameref on input line 27.
-
-(./Complete.out) (./Complete.out)
 \@outlinefile=\write5
-\openout5 = `Complete.out'.
+\openout5 = `CA.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 27.
@@ -1354,7 +1352,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 LaTeX Info: Redefining \includegraphics on input line 27.
 
-(./Complete.nav)
+No file CA.nav.
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 29.
@@ -1362,147 +1360,88 @@ LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./Complete.toc) [2
+No file CA.toc.
+[2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 37.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 42.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 37.
+line 42.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 ) [3
 
-] <uncolored.jpg, id=98, 371.28712pt x 353.21962pt>
-File: uncolored.jpg Graphic file (type jpg)
- <use uncolored.jpg>
-Package pdftex.def Info: uncolored.jpg used on input line 43.
-(pdftex.def)             Requested size: 199.16928pt x 189.47456pt.
+] [4
 
-[4
+] [5
 
- <./uncolored.jpg>] <colored.png, id=127, 732.7375pt x 699.61375pt>
-File: colored.png Graphic file (type png)
-
-<use colored.png>
-Package pdftex.def Info: colored.png used on input line 49.
-(pdftex.def)             Requested size: 199.16928pt x 190.15791pt.
- [5
-
- <./colored.png (PNG copy)>] [6
+] [6
 
 ] [7
 
 ] [8
 
-] [9
+] <images/grid.png, id=228, 2007.5pt x 2095.83pt>
+File: images/grid.png Graphic file (type png)
 
-] [10
+<use images/grid.png>
+Package pdftex.def Info: images/grid.png used on input line 53.
+(pdftex.def)             Requested size: 199.16928pt x 207.93233pt.
+ [9
+
+ <./images/grid.png>] [10
 
 ] [11
 
-]
-[12
+] [12
 
 ] [13
 
-] [14
+]
+File: images/grid.png Graphic file (type png)
+
+<use images/grid.png>
+Package pdftex.def Info: images/grid.png used on input line 70.
+(pdftex.def)             Requested size: 199.16928pt x 207.93233pt.
+ [14
 
 ] [15
 
 ] [16
 
-] <Truthiness.png, id=453, 471.7625pt x 306.14375pt>
-File: Truthiness.png Graphic file (type png)
+] [17
 
-<use Truthiness.png>
-Package pdftex.def Info: Truthiness.png used on input line 88.
-(pdftex.def)             Requested size: 199.16928pt x 129.2475pt.
- [17
+] [18
 
- <./Truthiness.png>]
-<Variable1.png, id=483, 471.7625pt x 501.875pt>
-File: Variable1.png Graphic file (type png)
- <use Variable1.png>
-Package pdftex.def Info: Variable1.png used on input line 94.
-(pdftex.def)             Requested size: 199.16928pt x 211.88115pt.
- [18
+] [19
 
- <./Variable1.png>] <Variable2.png, id=512, 471.7625pt x 501.875pt>
-File: Variable2.png Graphic file (type png)
+] [20
 
-<use Variable2.png>
-Package pdftex.def Info: Variable2.png used on input line 100.
-(pdftex.def)             Requested size: 199.16928pt x 211.88115pt.
- [19
+] [21
 
- <./Variable2.png>]
-<Or1.png, id=542, 685.56125pt x 421.575pt>
-File: Or1.png Graphic file (type png)
- <use Or1.png>
-Package pdftex.def Info: Or1.png used on input line 108.
-(pdftex.def)             Requested size: 199.16928pt x 122.47232pt.
- [20
+] [22
 
- <./Or1.png>]
-<Or2.png, id=572, 1080.035pt x 622.325pt>
-File: Or2.png Graphic file (type png)
- <use Or2.png>
-Package pdftex.def Info: Or2.png used on input line 118.
-(pdftex.def)             Requested size: 284.52756pt x 163.94675pt.
- [21
+] [23
 
- <./Or2.png>]
-<Comb1.png, id=601, 1682.285pt x 1585.925pt>
-File: Comb1.png Graphic file (type png)
- <use Comb1.png>
-Package pdftex.def Info: Comb1.png used on input line 124.
-(pdftex.def)             Requested size: 284.52756pt x 268.22432pt.
-
-Overfull \vbox (36.2763pt too high) detected at line 124
- []
-
-[22
-
- <./Comb1.png>] <Comb2.png, id=630, 1726.45pt x 1585.925pt>
-File: Comb2.png Graphic file (type png)
- <use Comb2.png>
-Package pdftex.def Info: Comb2.png used on input line 130.
-(pdftex.def)             Requested size: 284.52756pt x 261.35175pt.
-
-Overfull \vbox (29.40373pt too high) detected at line 130
- []
-
-[23
-
- <./Comb2.png>] <bats.png, id=659, 1927.2pt x 1084.05pt>
-File: bats.png Graphic file (type png)
- <use bats.png>
-Package pdftex.def Info: bats.png used on input line 136.
-(pdftex.def)             Requested size: 341.43306pt x 192.0439pt.
-
-Overfull \hbox (34.14319pt too wide) in paragraph at lines 136--136
- [] 
- []
-
+]
 [24
 
- <./bats.png (PNG copy)>] [25
+] [25
 
 ] [26
 
@@ -1520,62 +1459,51 @@ Overfull \hbox (34.14319pt too wide) in paragraph at lines 136--136
 
 ] [33
 
-]
-[34
+] [34
 
 ] [35
 
-] [36
-
-] [37
-
-] [38
-
-] [39
-
-] [40
-
-]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 190.
-
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [41
-
 ]
 \tf@nav=\write6
-\openout6 = `Complete.nav'.
+\openout6 = `CA.nav'.
 
 \tf@toc=\write7
-\openout7 = `Complete.toc'.
+\openout7 = `CA.toc'.
 
 \tf@snm=\write8
-\openout8 = `Complete.snm'.
+\openout8 = `CA.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
+ (./CA.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 
-(./Complete.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
-Package rerunfilecheck Info: File `Complete.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
+Package rerunfilecheck Warning: File `CA.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `CA.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
  ) 
 Here is how much of TeX's memory you used:
- 18727 strings out of 493089
- 344530 string characters out of 6134842
- 403658 words of memory out of 5000000
- 21590 multiletter control sequences out of 15000+600000
- 17841 words of font info for 54 fonts, out of 8000000 for 9000
+ 18531 strings out of 493089
+ 341378 string characters out of 6134842
+ 401102 words of memory out of 5000000
+ 21440 multiletter control sequences out of 15000+600000
+ 15931 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,14n,55p,415b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,14n,55p,570b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></
@@ -1583,15 +1511,13 @@ usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfso1200.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss1728.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Complete.pdf (41 pages, 1953468 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss1728.pfb>
+Output written on CA.pdf (35 pages, 182768 bytes).
 PDF statistics:
- 1217 PDF objects out of 1440 (max. 8388607)
- 1128 compressed objects within 12 object streams
- 142 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1022 PDF objects out of 1200 (max. 8388607)
+ 958 compressed objects within 10 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -149,7 +149,7 @@ Transform expression \(S\) to graph \(G_s\)
 * Example
 #+BEGIN_LaTeX
 \[
-(x \vee y \vee \neg z) \vee (\neg x \vee \neg y \vee z)
+(x \vee y \vee \neg z) \wedge (\neg x \vee \neg y \vee z)
 \]
 #+END_LaTeX
 
@@ -158,7 +158,7 @@ Transform expression \(S\) to graph \(G_s\)
 If boolean expression \(S\) is satisfiable, \(G_s\) is 3 colorable
 
 \begin{itemize}
-\item<1-> If \(S\) is satisfialbe at least one literal in each clause is colored true.
+\item<1-> If \(S\) is satisfiable at least one literal in each clause is colored true.
 \item<2-> Output of 3-way OR gate can be colored with true as the output. This leads to a valid 3 coloring
 \end{itemize}
 #+END_LaTeX
@@ -168,7 +168,7 @@ If boolean expression \(S\) is satisfiable, \(G_s\) is 3 colorable
 If graph \(G_s\) is 3 colorable, \(S\) is satisfiable
 
 \begin{itemize}
-\item<1-> A coloring of the graph forces the output of the 3-way OR gades to be colored true
+\item<1-> A coloring of the graph forces the output of the 3-way OR gates to be colored true
 \item<2-> For each clause in \(S\) there must be at least one varaible colored true
 \end{itemize}
 
@@ -178,7 +178,7 @@ If graph \(G_s\) is 3 colorable, \(S\) is satisfiable
 #+BEGIN_LaTeX
 \begin{itemize}
 \item<1-> Truthiness nodes - \(O(1)\)
-\item<2-> Variable T/F nodes - \(O(n)\)
+\item<2-> Variable T/F nodes - \(O(v)\)
 \item<3-> \(O(n)\) for \(n\) clauses
 \item<4-> Overall - \(O(n)\)
 \end{itemize}
