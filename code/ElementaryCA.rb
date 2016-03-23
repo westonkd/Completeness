@@ -30,7 +30,6 @@ module CellularAutomata
             @rule_array.unshift('0')
          end
 
-         puts @rule_array
       end
 
       def run(count = 0)
@@ -58,8 +57,8 @@ module CellularAutomata
       private
 
       def get_neighborhood(index)
-         #bound check
-         return 0 if index - 1 < 0 || index + 1 > @current_gen.length
+         #bounds check
+         return 0 if index - 1 < 0 || index + 1 > @current_gen.length - 1
 
          #Convert the current neighborhood into a decimal number
          lookup = [@current_gen[index - 1], @current_gen[index], @current_gen[index + 1]]
