@@ -1,4 +1,4 @@
-% Created 2016-03-18 Fri 16:42
+% Created 2016-03-23 Wed 11:34
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -120,22 +120,82 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \end{frame}
 
 \begin{frame}[label=sec-12]{Example Program}
+\url{https://github.com/westonkd/Completeness/tree/CA}
 \end{frame}
 
 \begin{frame}[label=sec-13]{2D CA Example - Conway's Game of Life}
+\includegraphics[width=11cm]{images/gol1.jpg}
 \end{frame}
+
 \begin{frame}[label=sec-14]{Conway's Game of Life}
+\begin{enumerate}
+\item<1->Rules
+\item<2->Entities
+\item<3->Results
+\item<4->Computational tidbits
+\end{enumerate}
 \end{frame}
+
 \begin{frame}[label=sec-15]{Conway's Game of Life Rules}
+\begin{itemize}
+\item<1->2 states - dead or alive
+\item<2->3x3 Moore neighborhood
+\end{itemize}
+
+\begin{enumerate}
+\item<3->Any live cell with fewer than two live neighbors dies (under population).
+\item<4->Any cell with 2 or 3 live neighbors lives on to the next generation.
+\item<5->A cell with more than 3 live neighbors dies (over crowding).
+\item<6->A dead cell with exactly 3 live neighbors becomes alive (reproduction).
+\end{enumerate}
 \end{frame}
-\begin{frame}[label=sec-16]{Conway's Game of Life Entities}
+
+\begin{frame}[label=sec-16]{Examples}
 \end{frame}
-\begin{frame}[label=sec-17]{Conway's Game of Life is Decidability}
+\begin{frame}[label=sec-17]{Conway's Game of Life Entities}
+\begin{enumerate}
+\item<1->Still lives - entity stays the same throught generations
+\item<2->Oscillators - entity changes shape and returns to original position (periods)
+\item<3->Spaceships - Moving oscillators
+\end{enumerate}
+\url{https://en.wikipedia.org/wiki/Conway\%27s_Game_of_Life}
+\end{frame}
+\begin{frame}[label=sec-18]{Conway's Game of Life Results}
+\begin{enumerate}
+\item<1->Fade away completely
+\item<2->Stable configuration
+\item<3->Oscillating phase
+\end{enumerate}
+\end{frame}
+\begin{frame}[label=sec-19]{Conway's Game of Life Decidability}
 The question - "Given a starting pattern and an ending pattern, will the starting pattern ever reach the ending pattern?"
 \begin{itemize}
 \item<2->Undecidable - halting problem
 \item<3->"Indeed, since the game of life includes a pattern that is equivalent to a UTM (universal Turing machine), this "deciding" algorithm, if existed, could have been used to solve the halting problem, by taking the initial pattern as the one corresponding to a UTM+input and the later pattern as the one corresponding to a halting state of the machine with an empty tape (as one can modify the Turing machine to always erase the tape before halting). However the halting problem is provably undecidable and so such an algorithm does not exist" (Wikipedia).
 \end{itemize}
+\end{frame}
+\begin{frame}[label=sec-20]{Conway's Game of Life Turing Completeness}
+\begin{itemize}
+\item Conway's Game of Life is Turing Complete
+\item \url{http://rendell-attic.org/gol/tm.htm}
+\end{itemize}
+\end{frame}
+\begin{frame}[label=sec-21]{Demo}
+\url{https://sourceforge.net/projects/golly/}
+\end{frame}
+
+\begin{frame}[label=sec-22]{CAs in the Wild}
+\begin{itemize}
+\item<1->Image processing (pixels)
+\end{itemize}
+\end{frame}
+\begin{frame}[label=sec-23]{Summary}
+\begin{itemize}
+\item<1->
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-24]{Sources}
 \end{frame}
 % Emacs 24.5.1 (Org mode 8.2.10)
 \end{document}
