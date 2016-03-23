@@ -1,4 +1,4 @@
-% Created 2016-03-18 Fri 16:41
+% Created 2016-03-18 Fri 16:42
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -130,7 +130,7 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \end{frame}
 \begin{frame}[label=sec-16]{Conway's Game of Life Entities}
 \end{frame}
-\begin{frame}[label=sec-17]{Conway's Game of Life is Undecidable}
+\begin{frame}[label=sec-17]{Conway's Game of Life is Decidability}
 The question - "Given a starting pattern and an ending pattern, will the starting pattern ever reach the ending pattern?"
 \begin{itemize}
 \item<2->Undecidable - halting problem

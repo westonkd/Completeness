@@ -110,7 +110,7 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 * Conway's Game of Life
 * Conway's Game of Life Rules
 * Conway's Game of Life Entities
-* Conway's Game of Life is Decidability
+* Conway's Game of Life Decidability
 The question - "Given a starting pattern and an ending pattern, will the starting pattern ever reach the ending pattern?"
 #+BEGIN_LaTeX
 \begin{itemize}
@@ -118,3 +118,6 @@ The question - "Given a starting pattern and an ending pattern, will the startin
 \item<3->"Indeed, since the game of life includes a pattern that is equivalent to a UTM (universal Turing machine), this "deciding" algorithm, if existed, could have been used to solve the halting problem, by taking the initial pattern as the one corresponding to a UTM+input and the later pattern as the one corresponding to a halting state of the machine with an empty tape (as one can modify the Turing machine to always erase the tape before halting). However the halting problem is provably undecidable and so such an algorithm does not exist" (Wikipedia).
 \end{itemize}
 #+END_LaTeX
+* Demo
+* Summary
+* Sources
