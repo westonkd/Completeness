@@ -1,4 +1,4 @@
-% Created 2016-03-23 Wed 11:37
+% Created 2016-03-30 Wed 12:21
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -110,12 +110,12 @@ What is the simplest...
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label=sec-11]{Elementary Cellular Automaton}
+\begin{frame}[label=sec-11]{Elementary Cellular Automaton (Exercise)}
 How do we describe the state of cell \(c_t\) as a function of the neighbors of \(c_t\) at time \(t-1\)?
 \begin{itemize}
-\item<1->There are \(2^3 = 8\) neighborhood combinations for any given neighborhood.
-\item<2->Simply create an assignment for each combination!
-\item<3->This assignment is called a rule set (how many possible rule sets?)
+\item<2->There are \(2^3 = 8\) neighborhood combinations for any given neighborhood.
+\item<3->Simply create an assignment for each combination!
+\item<4->This assignment is called a rule set (how many possible rule sets?)
 \end{itemize}
 \end{frame}
 
@@ -150,7 +150,12 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \end{enumerate}
 \end{frame}
 
-\begin{frame}[label=sec-16]{Examples}
+\begin{frame}[label=sec-16]{Practice}
+\begin{center}
+\includegraphics[width=2cm]{images/beehive.png}
+\includegraphics[width=2cm]{images/toad.png}
+\includegraphics[width=2cm]{images/glider.png}
+\end{center}
 \end{frame}
 \begin{frame}[label=sec-17]{Conway's Game of Life Entities}
 \begin{enumerate}
@@ -167,36 +172,53 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \item<3->Oscillating phase
 \end{enumerate}
 \end{frame}
-\begin{frame}[label=sec-19]{Conway's Game of Life Decidability}
+\begin{frame}[label=sec-19]{Demo}
+\begin{itemize}
+\item \url{http://www.bitstorm.org/gameoflife/}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-20]{Conway's Game of Life Decidability}
 The question - "Given a starting pattern and an ending pattern, will the starting pattern ever reach the ending pattern?"
 \begin{itemize}
 \item<2->Undecidable - halting problem
 \item<3->"Indeed, since the game of life includes a pattern that is equivalent to a UTM (universal Turing machine), this "deciding" algorithm, if existed, could have been used to solve the halting problem, by taking the initial pattern as the one corresponding to a UTM+input and the later pattern as the one corresponding to a halting state of the machine with an empty tape (as one can modify the Turing machine to always erase the tape before halting). However the halting problem is provably undecidable and so such an algorithm does not exist" (Wikipedia).
 \end{itemize}
 \end{frame}
-\begin{frame}[label=sec-20]{Conway's Game of Life Turing Completeness}
+\begin{frame}[label=sec-21]{Conway's Game of Life Turing Completeness}
 \begin{itemize}
 \item Conway's Game of Life is Turing Complete
 \item \url{http://rendell-attic.org/gol/tm.htm}
 \item \url{https://www.youtube.com/watch?v=My8AsV7bA94}
 \end{itemize}
 \end{frame}
-\begin{frame}[label=sec-21]{Demo}
-\url{https://sourceforge.net/projects/golly/}
-\end{frame}
-
 \begin{frame}[label=sec-22]{CAs in the Wild}
 \begin{itemize}
 \item<1->Image processing (pixels)
+\item<2->Nature
+\item<3->Migration patterns
 \end{itemize}
 \end{frame}
-\begin{frame}[label=sec-23]{Summary}
+\begin{frame}[label=sec-23]{CAs in the Wild}
+\includegraphics[width=11cm]{images/shell.jpg}
+\end{frame}
+\begin{frame}[label=sec-24]{Extra: 3D CAs}
+\url{http://cubes.io/}
+\end{frame}
+\begin{frame}[label=sec-25]{Summary}
 \begin{itemize}
 \item<1->
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label=sec-24]{Sources}
+\begin{frame}[label=sec-26]{Sources}
+\begin{itemize}
+\item \url{https://en.wikipedia.org/wiki/Conway\%27s_Game_of_Life}
+\item \url{https://www.youtube.com/watch?v=W1zKu3fDQR8}
+\item \url{https://www.youtube.com/watch?v=EyrwOf239M4}
+\item \url{https://www3.nd.edu/~mtns/papers/17761_4.pdf}
+\item \url{http://www.sciencedirect.com/science/article/pii/S089571771000333X}
+\end{itemize}
 \end{frame}
 % Emacs 24.5.1 (Org mode 8.2.10)
 \end{document}

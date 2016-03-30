@@ -94,13 +94,13 @@ What is the simplest...
 \end{itemize}
 #+END_LaTeX
 
-* Elementary Cellular Automaton
+* Elementary Cellular Automaton (Exercise)
 #+BEGIN_LaTeX
 How do we describe the state of cell \(c_t\) as a function of the neighbors of \(c_t\) at time \(t-1\)?
 \begin{itemize}
-\item<1->There are \(2^3 = 8\) neighborhood combinations for any given neighborhood.
-\item<2->Simply create an assignment for each combination!
-\item<3->This assignment is called a rule set (how many possible rule sets?)
+\item<2->There are \(2^3 = 8\) neighborhood combinations for any given neighborhood.
+\item<3->Simply create an assignment for each combination!
+\item<4->This assignment is called a rule set (how many possible rule sets?)
 \end{itemize}
 #+END_LaTeX
 
@@ -135,7 +135,12 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \item<6->A dead cell with exactly 3 live neighbors becomes alive (reproduction).
 \end{enumerate}
 
-* Examples
+* Practice
+\begin{center}
+\includegraphics[width=2cm]{images/beehive.png}
+\includegraphics[width=2cm]{images/toad.png}
+\includegraphics[width=2cm]{images/glider.png}
+\end{center}
 * Conway's Game of Life Entities
 #+BEGIN_LaTeX
 \begin{enumerate}
@@ -153,6 +158,9 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \item<3->Oscillating phase
 \end{enumerate}
 #+END_LaTeX
+* Demo
+- [[http://www.bitstorm.org/gameoflife/]]
+
 * Conway's Game of Life Decidability
 The question - "Given a starting pattern and an ending pattern, will the starting pattern ever reach the ending pattern?"
 #+BEGIN_LaTeX
@@ -165,15 +173,20 @@ The question - "Given a starting pattern and an ending pattern, will the startin
   - Conway's Game of Life is Turing Complete 
   - [[http://rendell-attic.org/gol/tm.htm]]  
   - [[https://www.youtube.com/watch?v=My8AsV7bA94]]
-* Demo
-[[https://sourceforge.net/projects/golly/]]
-
 * CAs in the Wild
 #+BEGIN_LaTeX
 \begin{itemize}
 \item<1->Image processing (pixels)
+\item<2->Nature
+\item<3->Migration patterns
 \end{itemize}
 #+END_LaTeX
+* CAs in the Wild
+#+BEGIN_LaTeX
+\includegraphics[width=11cm]{images/shell.jpg}
+#+END_LaTeX
+* Extra: 3D CAs
+[[http://cubes.io/]]
 * Summary
 #+BEGIN_LaTeX
 \begin{itemize}
@@ -182,3 +195,8 @@ The question - "Given a starting pattern and an ending pattern, will the startin
 #+END_LaTeX
 
 * Sources
+- [[https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life]]
+- [[https://www.youtube.com/watch?v=W1zKu3fDQR8]]
+- [[https://www.youtube.com/watch?v=EyrwOf239M4]]
+- [[https://www3.nd.edu/~mtns/papers/17761_4.pdf]]
+- [[http://www.sciencedirect.com/science/article/pii/S089571771000333X]]

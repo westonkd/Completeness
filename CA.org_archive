@@ -1,0 +1,18 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/westonkd/GitHub/Advanced/CA.org
+
+
+* CAs in the Wild
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-03-30 Wed 11:42
+  :ARCHIVE_FILE: ~/GitHub/Advanced/CA.org
+  :ARCHIVE_CATEGORY: CA
+  :END:
+#+BEGIN_LaTeX
+\begin{itemize}
+\item<1->Image processing (pixels)
+\item<2->Nature \includegraphics[width=4cm]{images/shell.jpg}
+\end{itemize}
+#+END_LaTeX
