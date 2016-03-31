@@ -41,7 +41,7 @@ module CellularAutomata
          print_gen @current_gen
 
          #comput the next generation
-         (1...@current_gen.length - 1).step do |i|
+         (1..@current_gen.length - 1).step do |i|
             @next_gen[i] = @rule_array[get_neighborhood(i)]
          end
 

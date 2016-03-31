@@ -1,4 +1,4 @@
-% Created 2016-03-30 Wed 12:20
+% Created 2016-03-31 Thu 11:05
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -118,16 +118,24 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \item<4->This assignment is called a rule set (how many possible rule sets?)
 \end{itemize}
 \end{frame}
-
 \begin{frame}[label=sec-12]{Example Program}
-\url{https://github.com/westonkd/Completeness/tree/CA}
+\begin{itemize}
+\item \url{http://mathworld.wolfram.com/ElementaryCellularAutomaton.html}
+\item \url{https://github.com/westonkd/Completeness/tree/CA}
+\end{itemize}
 \end{frame}
 
-\begin{frame}[label=sec-13]{2D CA Example - Conway's Game of Life}
+\begin{frame}[label=sec-13]{Interesting Tidbits}
+\begin{itemize}
+\item<1->Rule 30 - Random number genrator for Wolfram language
+\item<2->Rule 22 - Sierpinski triangle
+\end{itemize}
+\end{frame}
+\begin{frame}[label=sec-14]{2D CA Example - Conway's Game of Life}
 \includegraphics[width=11cm]{images/gol1.jpg}
 \end{frame}
 
-\begin{frame}[label=sec-14]{Conway's Game of Life}
+\begin{frame}[label=sec-15]{Conway's Game of Life}
 \begin{enumerate}
 \item<1->Rules
 \item<2->Entities
@@ -136,7 +144,7 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \end{enumerate}
 \end{frame}
 
-\begin{frame}[label=sec-15]{Conway's Game of Life Rules}
+\begin{frame}[label=sec-16]{Conway's Game of Life Rules}
 \begin{itemize}
 \item<1->2 states - dead or alive
 \item<2->3x3 Moore neighborhood
@@ -150,14 +158,14 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \end{enumerate}
 \end{frame}
 
-\begin{frame}[label=sec-16]{Practice}
+\begin{frame}[label=sec-17]{Practice}
 \begin{center}
 \includegraphics[width=2cm]{images/beehive.png}
 \includegraphics[width=2cm]{images/toad.png}
 \includegraphics[width=2cm]{images/glider.png}
 \end{center}
 \end{frame}
-\begin{frame}[label=sec-17]{Conway's Game of Life Entities}
+\begin{frame}[label=sec-18]{Conway's Game of Life Entities}
 \begin{enumerate}
 \item<1->Still lives - entity stays the same throught generations
 \item<2->Oscillators - entity changes shape and returns to original position (periods)
@@ -165,53 +173,54 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \end{enumerate}
 \url{https://en.wikipedia.org/wiki/Conway\%27s_Game_of_Life}
 \end{frame}
-\begin{frame}[label=sec-18]{Conway's Game of Life Results}
+\begin{frame}[label=sec-19]{Conway's Game of Life Results}
 \begin{enumerate}
 \item<1->Fade away completely
 \item<2->Stable configuration
 \item<3->Oscillating phase
+\item<4->...Gosper glider gun
 \end{enumerate}
 \end{frame}
-\begin{frame}[label=sec-19]{Conway's Game of Life Decidability}
+\begin{frame}[label=sec-20]{Demo}
+\begin{itemize}
+\item \url{http://www.bitstorm.org/gameoflife/}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-21]{Conway's Game of Life Decidability}
 The question - "Given a starting pattern and an ending pattern, will the starting pattern ever reach the ending pattern?"
 \begin{itemize}
 \item<2->Undecidable - halting problem
 \item<3->"Indeed, since the game of life includes a pattern that is equivalent to a UTM (universal Turing machine), this "deciding" algorithm, if existed, could have been used to solve the halting problem, by taking the initial pattern as the one corresponding to a UTM+input and the later pattern as the one corresponding to a halting state of the machine with an empty tape (as one can modify the Turing machine to always erase the tape before halting). However the halting problem is provably undecidable and so such an algorithm does not exist" (Wikipedia).
 \end{itemize}
 \end{frame}
-\begin{frame}[label=sec-20]{Conway's Game of Life Turing Completeness}
+\begin{frame}[label=sec-22]{Conway's Game of Life Turing Completeness}
 \begin{itemize}
 \item Conway's Game of Life is Turing Complete
 \item \url{http://rendell-attic.org/gol/tm.htm}
 \item \url{https://www.youtube.com/watch?v=My8AsV7bA94}
 \end{itemize}
 \end{frame}
-\begin{frame}[label=sec-21]{Demo}
-\begin{itemize}
-\item \url{http://www.bitstorm.org/gameoflife/}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[label=sec-22]{CAs in the Wild}
+\begin{frame}[label=sec-23]{CAs in the Wild}
 \begin{itemize}
 \item<1->Image processing (pixels)
 \item<2->Nature
 \item<3->Migration patterns
 \end{itemize}
 \end{frame}
-\begin{frame}[label=sec-23]{CAs in the Wild}
+\begin{frame}[label=sec-24]{CAs in the Wild}
 \includegraphics[width=11cm]{images/shell.jpg}
 \end{frame}
-\begin{frame}[label=sec-24]{Extra: 3D CAs}
+\begin{frame}[label=sec-25]{Extra: 3D CAs}
 \url{http://cubes.io/}
 \end{frame}
-\begin{frame}[label=sec-25]{Summary}
+\begin{frame}[label=sec-26]{Summary}
 \begin{itemize}
 \item<1->
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label=sec-26]{Sources}
+\begin{frame}[label=sec-27]{Sources}
 \begin{itemize}
 \item \url{https://en.wikipedia.org/wiki/Conway\%27s_Game_of_Life}
 \item \url{https://www.youtube.com/watch?v=W1zKu3fDQR8}

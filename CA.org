@@ -103,10 +103,17 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \item<4->This assignment is called a rule set (how many possible rule sets?)
 \end{itemize}
 #+END_LaTeX
-
 * Example Program
-[[https://github.com/westonkd/Completeness/tree/CA]]
+- [[http://mathworld.wolfram.com/ElementaryCellularAutomaton.html]]
+- [[https://github.com/westonkd/Completeness/tree/CA]]
 
+* Interesting Tidbits
+#+BEGIN_LaTeX
+\begin{itemize}
+\item<1->Rule 30 - Random number genrator for Wolfram language
+\item<2->Rule 22 - Sierpinski triangle
+\end{itemize}
+#+END_LaTeX
 * 2D CA Example - Conway's Game of Life
 #+BEGIN_LaTeX
 \includegraphics[width=11cm]{images/gol1.jpg}
@@ -156,6 +163,7 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \item<1->Fade away completely
 \item<2->Stable configuration
 \item<3->Oscillating phase
+\item<4->...Gosper glider gun
 \end{enumerate}
 #+END_LaTeX
 * Demo
