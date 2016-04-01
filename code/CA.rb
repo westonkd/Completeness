@@ -1,5 +1,5 @@
 module CellularAutomata
-	class CA
+	class GOL_CA
 		attr_reader :rows, :columns, :initial_gen, :generation_count, :speed
 
 		def initialize(initial_gen, settings)
@@ -19,7 +19,7 @@ module CellularAutomata
 		end
 
 		def run(count = 0)
-			#base case
+			#base GOL_CAse
 			return if count > @generation_count
 
 			#Print the current generation
@@ -87,7 +87,7 @@ end
 
 settings = {
 	generation_count: 500,
-	speed: 0.2
+	speed: 0.1
 }
 
 initial_gen = [
@@ -123,5 +123,6 @@ initial_gen = [
 			[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 			]
 
-test = CellularAutomata::CA.new(initial_gen, settings)
-test.run
+
+game_of_life_CA = CellularAutomata::GOL_CA.new(initial_gen, settings)
+game_of_life_CA.run

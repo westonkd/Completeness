@@ -132,7 +132,7 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 * Conway's Game of Life Rules
 \begin{itemize}
 \item<1->2 states - dead or alive
-\item<2->3x3 Moore neighborhood
+\item<2->3x3 Moore neighborhood 
 \end{itemize}
 
 \begin{enumerate}
@@ -195,13 +195,14 @@ The question - "Given a starting pattern and an ending pattern, will the startin
 #+END_LaTeX
 * Extra: 3D CAs
 [[http://cubes.io/]]
-* Summary
-#+BEGIN_LaTeX
+* Going Further
+#+Begin_LaTeX
 \begin{itemize}
-\item<1->
+\item<1->Crazy grids
+\item<2->Probability
+\item<3->History
 \end{itemize}
 #+END_LaTeX
-
 * Sources
 - [[https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life]]
 - [[https://www.youtube.com/watch?v=W1zKu3fDQR8]]
