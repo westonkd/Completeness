@@ -1,58 +1,38 @@
-% Created 2016-03-31 Thu 18:23
-\documentclass[bigger]{beamer}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{fixltx2e}
-\usepackage{graphicx}
-\usepackage{longtable}
-\usepackage{float}
-\usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
-\usepackage{textcomp}
-\usepackage{marvosym}
-\usepackage{wasysym}
-\usepackage{amssymb}
-\usepackage{hyperref}
-\tolerance=1000
-\usetheme{default}
-\author{Weston Dransfield}
-\date{\today}
-\title{Cellular Automata}
-\hypersetup{
-  pdfkeywords={},
-  pdfsubject={},
-  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
-\begin{document}
+#+startup: beamer
+#+OPTIONS:toc:nil
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger]
+#+BEAMER_FRAME_LEVEL: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
 
-\maketitle
-\begin{frame}{Outline}
-\tableofcontents
-\end{frame}
+#+TITLE: Cellular Automata
+#+AUTHOR: Weston Dransfield
 
-
-\begin{frame}[label=sec-1]{The Basics}
+* The Basics
+#+BEGIN_LaTeX
 \begin{itemize}
 \item<1-> Spacial Structure
 \item<2-> Local Interactions
 \item<3-> Cell State
 \item<4-> Cell Transitions
 \end{itemize}
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-2]{Spacial Structure}
+* Spacial Structure
+#+BEGIN_LaTeX
 \begin{itemize}
 \item<1-> Grid - Like a city
 \item<2-> Agents - Like a home in the city
 \end{itemize}
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-3]{Spacial Structure}
+* Spacial Structure
+#+BEGIN_LaTeX
 \includegraphics[width=7cm]{images/grid.png}
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-4]{Local Interactions}
+* Local Interactions
+#+BEGIN_LaTeX
 Agents may only interact with a set number of agents around them. This region is called a neighborhood.
 \begin{itemize}
 \item<1->Von Neumann neighborhood (most local).
@@ -63,25 +43,27 @@ Agents may only interact with a set number of agents around them. This region is
 \pause
 \pause
 Locality indicates how many agents a single agent interacts with. High locality indicates more interactions (Think of how a rumor spreads).
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-5]{Local Interactions}
+* Local Interactions
+#+BEGIN_LaTeX
 \includegraphics[width=7cm]{images/grid.png}
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-6]{Cell State}
+* Cell State
+#+BEGIN_LaTeX
 Cells have a state
 \begin{itemize}
 \item<1->Binary
 \item<2->Any number of states
 \end{itemize}
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-7]{Cell Transitions}
+* Cell Transitions
 CA have discrete chunks of time called rounds. Each round produces the next "generation" of cells.
-\end{frame}
 
-\begin{frame}[label=sec-8]{Cell Transitions}
+* Cell Transitions
+#+BEGIN_LaTeX
 The next state of a cell is a function of:
 \begin{itemize}
 \item<1->It's current state
@@ -90,64 +72,60 @@ The next state of a cell is a function of:
 \pause
 \pause
 Think of your opinion on a topic changing by being surrounded by people with a different view.
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-9]{Elementary Cellular Automaton}
+* Elementary Cellular Automaton
+#+BEGIN_LaTeX
 What is the simplest...
 \begin{itemize}
 \item<1->Grid of cells?
 \item<2->Useful number of states?
 \item<3->Neighborhood?
 \end{itemize}
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-10]{Elementary Cellular Automaton}
+* Elementary Cellular Automaton
+#+BEGIN_LaTeX
 What is the simplest...
 \begin{itemize}
 \item<1->Grid of cells - an array
 \item<1->Useful number of states - binary
 \item<1->Neighborhood - 2 adjacent cells of the agent
 \end{itemize}
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-11]{Elementary Cellular Automaton (Exercise)}
+* Elementary Cellular Automaton (Exercise)
+#+BEGIN_LaTeX
 How do we describe the state of cell \(c_t\) as a function of the neighbors of \(c_t\) at time \(t-1\)?
 \begin{itemize}
 \item<2->There are \(2^3 = 8\) neighborhood combinations for any given neighborhood.
 \item<3->Simply create an assignment for each combination!
 \item<4->This assignment is called a rule set (how many possible rule sets?)
 \end{itemize}
-\end{frame}
-\begin{frame}[label=sec-12]{Example Program}
-\begin{itemize}
-\item \url{http://mathworld.wolfram.com/ElementaryCellularAutomaton.html}
-\item \url{https://github.com/westonkd/Completeness/tree/CA}
-\end{itemize}
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-13]{Interesting Tidbits}
-\begin{itemize}
-\item<1->Rule 30 - Random number genrator for Wolfram language
-\item<2->Rule 22 - Sierpinski triangle
-\end{itemize}
-\end{frame}
-\begin{frame}[label=sec-14]{2D CA Example - Conway's Game of Life}
+* Example Program
+[[https://github.com/westonkd/Completeness/tree/CA]]
+
+* 2D CA Example - Conway's Game of Life
+#+BEGIN_LaTeX
 \includegraphics[width=11cm]{images/gol1.jpg}
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-15]{Conway's Game of Life}
+* Conway's Game of Life
+#+BEGIN_LaTeX
 \begin{enumerate}
 \item<1->Rules
 \item<2->Entities
 \item<3->Results
 \item<4->Computational tidbits
 \end{enumerate}
-\end{frame}
+#+END_LaTeX
 
-\begin{frame}[label=sec-16]{Conway's Game of Life Rules}
+* Conway's Game of Life Rules
 \begin{itemize}
 \item<1->2 states - dead or alive
-\item<2->3x3 Moore neighborhood 
+\item<2->3x3 Moore neighborhood
 \end{itemize}
 
 \begin{enumerate}
@@ -156,79 +134,69 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \item<5->A cell with more than 3 live neighbors dies (over crowding).
 \item<6->A dead cell with exactly 3 live neighbors becomes alive (reproduction).
 \end{enumerate}
-\end{frame}
 
-\begin{frame}[label=sec-17]{Practice}
+* Practice
 \begin{center}
 \includegraphics[width=2cm]{images/beehive.png}
 \includegraphics[width=2cm]{images/toad.png}
 \includegraphics[width=2cm]{images/glider.png}
 \end{center}
-\end{frame}
-\begin{frame}[label=sec-18]{Conway's Game of Life Entities}
+* Conway's Game of Life Entities
+#+BEGIN_LaTeX
 \begin{enumerate}
 \item<1->Still lives - entity stays the same throught generations
 \item<2->Oscillators - entity changes shape and returns to original position (periods)
 \item<3->Spaceships - Moving oscillators
 \end{enumerate}
-\url{https://en.wikipedia.org/wiki/Conway\%27s_Game_of_Life}
-\end{frame}
-\begin{frame}[label=sec-19]{Conway's Game of Life Results}
+#+END_LaTeX
+[[https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life]]
+* Conway's Game of Life Results
+#+BEGIN_LaTex
 \begin{enumerate}
 \item<1->Fade away completely
 \item<2->Stable configuration
 \item<3->Oscillating phase
-\item<4->...Gosper glider gun
 \end{enumerate}
-\end{frame}
-\begin{frame}[label=sec-20]{Demo}
-\begin{itemize}
-\item \url{http://www.bitstorm.org/gameoflife/}
-\end{itemize}
-\end{frame}
+#+END_LaTeX
+* Demo
+- [[http://www.bitstorm.org/gameoflife/]]
 
-\begin{frame}[label=sec-21]{Conway's Game of Life Decidability}
+* Conway's Game of Life Decidability
 The question - "Given a starting pattern and an ending pattern, will the starting pattern ever reach the ending pattern?"
+#+BEGIN_LaTeX
 \begin{itemize}
 \item<2->Undecidable - halting problem
 \item<3->"Indeed, since the game of life includes a pattern that is equivalent to a UTM (universal Turing machine), this "deciding" algorithm, if existed, could have been used to solve the halting problem, by taking the initial pattern as the one corresponding to a UTM+input and the later pattern as the one corresponding to a halting state of the machine with an empty tape (as one can modify the Turing machine to always erase the tape before halting). However the halting problem is provably undecidable and so such an algorithm does not exist" (Wikipedia).
 \end{itemize}
-\end{frame}
-\begin{frame}[label=sec-22]{Conway's Game of Life Turing Completeness}
-\begin{itemize}
-\item Conway's Game of Life is Turing Complete
-\item \url{http://rendell-attic.org/gol/tm.htm}
-\item \url{https://www.youtube.com/watch?v=My8AsV7bA94}
-\end{itemize}
-\end{frame}
-\begin{frame}[label=sec-23]{CAs in the Wild}
+#+END_LaTeX
+* Conway's Game of Life Turing Completeness
+  - Conway's Game of Life is Turing Complete 
+  - [[http://rendell-attic.org/gol/tm.htm]]  
+  - [[https://www.youtube.com/watch?v=My8AsV7bA94]]
+* CAs in the Wild
+#+BEGIN_LaTeX
 \begin{itemize}
 \item<1->Image processing (pixels)
 \item<2->Nature
 \item<3->Migration patterns
 \end{itemize}
-\end{frame}
-\begin{frame}[label=sec-24]{CAs in the Wild}
+#+END_LaTeX
+* CAs in the Wild
+#+BEGIN_LaTeX
 \includegraphics[width=11cm]{images/shell.jpg}
-\end{frame}
-\begin{frame}[label=sec-25]{Extra: 3D CAs}
-\url{http://cubes.io/}
-\end{frame}
-\begin{frame}[label=sec-26]{Going Further}
+#+END_LaTeX
+* Extra: 3D CAs
+[[http://cubes.io/]]
+* Summary
+#+BEGIN_LaTeX
 \begin{itemize}
-\item<1->Crazy grids
-\item<2->Probability
-\item<3->History
+\item<1->
 \end{itemize}
-\end{frame}
-\begin{frame}[label=sec-27]{Sources}
-\begin{itemize}
-\item \url{https://en.wikipedia.org/wiki/Conway\%27s_Game_of_Life}
-\item \url{https://www.youtube.com/watch?v=W1zKu3fDQR8}
-\item \url{https://www.youtube.com/watch?v=EyrwOf239M4}
-\item \url{https://www3.nd.edu/~mtns/papers/17761_4.pdf}
-\item \url{http://www.sciencedirect.com/science/article/pii/S089571771000333X}
-\end{itemize}
-\end{frame}
-% Emacs 24.5.1 (Org mode 8.2.10)
-\end{document}
+#+END_LaTeX
+
+* Sources
+- [[https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life]]
+- [[https://www.youtube.com/watch?v=W1zKu3fDQR8]]
+- [[https://www.youtube.com/watch?v=EyrwOf239M4]]
+- [[https://www3.nd.edu/~mtns/papers/17761_4.pdf]]
+- [[http://www.sciencedirect.com/science/article/pii/S089571771000333X]]

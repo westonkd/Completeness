@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 MAR 2016 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 MAR 2016 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1449,19 +1449,125 @@ Package pdftex.def Info: images/grid.png used on input line 70.
 
 ] [28
 
-] [29
+]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 126.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [29
 
 ] [30
 
-] [31
+]
+[31
 
-] [32
+] <images/gol1.jpg, id=859, 1284.8pt x 722.7pt>
+File: images/gol1.jpg Graphic file (type jpg)
+ <use images/gol1.jpg>
+Package pdftex.def Info: images/gol1.jpg used on input line 136.
+(pdftex.def)             Requested size: 312.9803pt x 176.043pt.
 
-] [33
+Overfull \hbox (5.69043pt too wide) in paragraph at lines 136--136
+[][]  
+ []
+
+[32
+
+ <./images/gol1.jpg>] [33
 
 ] [34
 
 ] [35
+
+] [36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
+
+] [41
+
+] [42
+
+]
+<images/beehive.png, id=1153, 109.40875pt x 90.3375pt>
+File: images/beehive.png Graphic file (type png)
+
+<use images/beehive.png>
+Package pdftex.def Info: images/beehive.png used on input line 167.
+(pdftex.def)             Requested size: 56.9055pt x 46.98679pt.
+ <images/toad.png, id=1155, 107.40125pt x 104.39pt>
+File: images/toad.png Graphic file (type png)
+
+<use images/toad.png>
+Package pdftex.def Info: images/toad.png used on input line 167.
+(pdftex.def)             Requested size: 56.9055pt x 55.31049pt.
+ <images/glider.png, id=1156, 98.3675pt x 99.37125pt>
+File: images/glider.png Graphic file (type png)
+
+<use images/glider.png>
+Package pdftex.def Info: images/glider.png used on input line 167.
+(pdftex.def)             Requested size: 56.9055pt x 57.48524pt.
+ [43
+
+ <./images/beehive.png> <./images/toad.png> <./images/glider.png>] [44
+
+] [45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
+] [50
+
+] [51
+
+] [52
+
+] [53
+
+] [54
+
+] [55
+
+]
+[56
+
+] [57
+
+] [58
+
+] <images/shell.jpg, id=1599, 803.0pt x 602.25pt>
+File: images/shell.jpg Graphic file (type jpg)
+
+<use images/shell.jpg>
+Package pdftex.def Info: images/shell.jpg used on input line 213.
+(pdftex.def)             Requested size: 312.9803pt x 234.73871pt.
+
+Overfull \hbox (5.69043pt too wide) in paragraph at lines 213--213
+[][]  
+ []
+
+[59
+
+ <./images/shell.jpg>] [60
+
+] [61
+
+] [62
+
+] [63
+
+] [64
 
 ]
 \tf@nav=\write6
@@ -1473,11 +1579,11 @@ Package pdftex.def Info: images/grid.png used on input line 70.
 \tf@snm=\write8
 \openout8 = `CA.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
  (./CA.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
 
 
 Package rerunfilecheck Warning: File `CA.out' has changed.
@@ -1494,14 +1600,14 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
  ) 
 Here is how much of TeX's memory you used:
- 18531 strings out of 493089
- 341378 string characters out of 6134842
- 401102 words of memory out of 5000000
- 21440 multiletter control sequences out of 15000+600000
- 15931 words of font info for 51 fonts, out of 8000000 for 9000
+ 18809 strings out of 493089
+ 346121 string characters out of 6134842
+ 401396 words of memory out of 5000000
+ 21611 multiletter control sequences out of 15000+600000
+ 16244 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,55p,570b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -1513,11 +1619,12 @@ sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss1728.pfb>
-Output written on CA.pdf (35 pages, 182768 bytes).
+r/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss1728.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on CA.pdf (64 pages, 626556 bytes).
 PDF statistics:
- 1022 PDF objects out of 1200 (max. 8388607)
- 958 compressed objects within 10 object streams
- 121 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1856 PDF objects out of 2073 (max. 8388607)
+ 1746 compressed objects within 18 object streams
+ 218 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
