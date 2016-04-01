@@ -11,14 +11,14 @@
 * The Basics
 #+BEGIN_LaTeX
 \begin{itemize}
-\item<1-> Spacial Structure
+\item<1-> Spatial Structure
 \item<2-> Local Interactions
 \item<3-> Cell State
 \item<4-> Cell Transitions
 \end{itemize}
 #+END_LaTeX
 
-* Spacial Structure
+* Spatial Structure
 #+BEGIN_LaTeX
 \begin{itemize}
 \item<1-> Grid - Like a city
@@ -26,7 +26,7 @@
 \end{itemize}
 #+END_LaTeX
 
-* Spacial Structure
+* Spatial Structure
 #+BEGIN_LaTeX
 \includegraphics[width=7cm]{images/grid.png}
 #+END_LaTeX
@@ -110,7 +110,7 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 * Interesting Tidbits
 #+BEGIN_LaTeX
 \begin{itemize}
-\item<1->Rule 30 - Random number genrator for Wolfram language
+\item<1->Rule 30 - Random number generator for Wolfram language
 \item<2->Rule 22 - Sierpinski triangle
 \end{itemize}
 #+END_LaTeX
@@ -151,7 +151,7 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 * Conway's Game of Life Entities
 #+BEGIN_LaTeX
 \begin{enumerate}
-\item<1->Still lives - entity stays the same throught generations
+\item<1->Still lives - entity stays the same through generations
 \item<2->Oscillators - entity changes shape and returns to original position (periods)
 \item<3->Spaceships - Moving oscillators
 \end{enumerate}
@@ -169,6 +169,10 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 * Demo
 - [[http://www.bitstorm.org/gameoflife/]]
 
+* Conway's Game of Life Turing Completeness
+  - Conway's Game of Life is Turing Complete 
+  - [[http://rendell-attic.org/gol/tm.htm]]  
+  - [[https://www.youtube.com/watch?v=My8AsV7bA94]]
 * Conway's Game of Life Decidability
 The question - "Given a starting pattern and an ending pattern, will the starting pattern ever reach the ending pattern?"
 #+BEGIN_LaTeX
@@ -177,10 +181,6 @@ The question - "Given a starting pattern and an ending pattern, will the startin
 \item<3->"Indeed, since the game of life includes a pattern that is equivalent to a UTM (universal Turing machine), this "deciding" algorithm, if existed, could have been used to solve the halting problem, by taking the initial pattern as the one corresponding to a UTM+input and the later pattern as the one corresponding to a halting state of the machine with an empty tape (as one can modify the Turing machine to always erase the tape before halting). However the halting problem is provably undecidable and so such an algorithm does not exist" (Wikipedia).
 \end{itemize}
 #+END_LaTeX
-* Conway's Game of Life Turing Completeness
-  - Conway's Game of Life is Turing Complete 
-  - [[http://rendell-attic.org/gol/tm.htm]]  
-  - [[https://www.youtube.com/watch?v=My8AsV7bA94]]
 * CAs in the Wild
 #+BEGIN_LaTeX
 \begin{itemize}

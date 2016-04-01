@@ -1,4 +1,4 @@
-% Created 2016-03-31 Thu 17:02
+% Created 2016-04-01 Fri 10:00
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -187,18 +187,18 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label=sec-21]{Conway's Game of Life Decidability}
-The question - "Given a starting pattern and an ending pattern, will the starting pattern ever reach the ending pattern?"
-\begin{itemize}
-\item<2->Undecidable - halting problem
-\item<3->"Indeed, since the game of life includes a pattern that is equivalent to a UTM (universal Turing machine), this "deciding" algorithm, if existed, could have been used to solve the halting problem, by taking the initial pattern as the one corresponding to a UTM+input and the later pattern as the one corresponding to a halting state of the machine with an empty tape (as one can modify the Turing machine to always erase the tape before halting). However the halting problem is provably undecidable and so such an algorithm does not exist" (Wikipedia).
-\end{itemize}
-\end{frame}
-\begin{frame}[label=sec-22]{Conway's Game of Life Turing Completeness}
+\begin{frame}[label=sec-21]{Conway's Game of Life Turing Completeness}
 \begin{itemize}
 \item Conway's Game of Life is Turing Complete
 \item \url{http://rendell-attic.org/gol/tm.htm}
 \item \url{https://www.youtube.com/watch?v=My8AsV7bA94}
+\end{itemize}
+\end{frame}
+\begin{frame}[label=sec-22]{Conway's Game of Life Decidability}
+The question - "Given a starting pattern and an ending pattern, will the starting pattern ever reach the ending pattern?"
+\begin{itemize}
+\item<2->Undecidable - halting problem
+\item<3->"Indeed, since the game of life includes a pattern that is equivalent to a UTM (universal Turing machine), this "deciding" algorithm, if existed, could have been used to solve the halting problem, by taking the initial pattern as the one corresponding to a UTM+input and the later pattern as the one corresponding to a halting state of the machine with an empty tape (as one can modify the Turing machine to always erase the tape before halting). However the halting problem is provably undecidable and so such an algorithm does not exist" (Wikipedia).
 \end{itemize}
 \end{frame}
 \begin{frame}[label=sec-23]{CAs in the Wild}
@@ -215,13 +215,11 @@ The question - "Given a starting pattern and an ending pattern, will the startin
 \url{http://cubes.io/}
 \end{frame}
 \begin{frame}[label=sec-26]{Going Further}
-\#+BeginLaTeX
 \begin{itemize}
 \item<1->Crazy grids
 \item<2->Probability
 \item<3->History
 \end{itemize}
-\#+ENDLaTeX
 \end{frame}
 \begin{frame}[label=sec-27]{Sources}
 \begin{itemize}
