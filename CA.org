@@ -96,7 +96,7 @@ What is the simplest...
 
 * Elementary Cellular Automaton (Exercise)
 #+BEGIN_LaTeX
-How do we describe the state of cell \(c_t\) as a function of the neighbors of \(c_t\) at time \(t-1\)?
+How do we describe the state of cell \(c_t\) as a function of the neighbors of \(c_t\) and the state of \(c_t\) at time \(t-1\)?
 \begin{itemize}
 \item<2->There are \(2^3 = 8\) neighborhood combinations for any given neighborhood.
 \item<3->Simply create an assignment for each combination!
@@ -178,7 +178,7 @@ The question - "Given a starting pattern and an ending pattern, will the startin
 #+BEGIN_LaTeX
 \begin{itemize}
 \item<2->Undecidable - halting problem
-\item<3->"Indeed, since the game of life includes a pattern that is equivalent to a UTM (universal Turing machine), this "deciding" algorithm, if existed, could have been used to solve the halting problem, by taking the initial pattern as the one corresponding to a UTM+input and the later pattern as the one corresponding to a halting state of the machine with an empty tape (as one can modify the Turing machine to always erase the tape before halting). However the halting problem is provably undecidable and so such an algorithm does not exist" (Wikipedia).
+\item<3->"Indeed, since the game of life includes a pattern that is equivalent to a UTM (universal Turing machine), this 'deciding' algorithm, if existed, could have been used to solve the halting problem, by taking the initial pattern as the one corresponding to a UTM+input and the later pattern as the one corresponding to a halting state of the machine with an empty tape (as one can modify the Turing machine to always erase the tape before halting). However the halting problem is provably undecidable and so such an algorithm does not exist" (Wikipedia).
 \end{itemize}
 #+END_LaTeX
 * CAs in the Wild

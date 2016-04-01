@@ -19,10 +19,12 @@ module CellularAutomata
 
       def set_rule(rule_number)
          #There are only 255 valid rule sets (2^8 - 1)
-         raise RangeError.new('Rule number must be less than 256.') if rule_number > 256
+         raise RangeError.new('Rule number must be less than 256.') if rule_number > 255
+
+         #Set the rule number for later reference
+         @rule_number = rule_number
 
          #Convert to binary and split
-         @rule_number = rule_number
          @rule_array = rule_number.to_s(2).split('')
 
          #pad to 8 bits

@@ -1,4 +1,4 @@
-% Created 2016-04-01 Fri 10:00
+% Created 2016-04-01 Fri 10:14
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -34,21 +34,21 @@
 
 \begin{frame}[label=sec-1]{The Basics}
 \begin{itemize}
-\item<1-> Spacial Structure
+\item<1-> Spatial Structure
 \item<2-> Local Interactions
 \item<3-> Cell State
 \item<4-> Cell Transitions
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label=sec-2]{Spacial Structure}
+\begin{frame}[label=sec-2]{Spatial Structure}
 \begin{itemize}
 \item<1-> Grid - Like a city
 \item<2-> Agents - Like a home in the city
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label=sec-3]{Spacial Structure}
+\begin{frame}[label=sec-3]{Spatial Structure}
 \includegraphics[width=7cm]{images/grid.png}
 \end{frame}
 
@@ -111,7 +111,7 @@ What is the simplest...
 \end{frame}
 
 \begin{frame}[label=sec-11]{Elementary Cellular Automaton (Exercise)}
-How do we describe the state of cell \(c_t\) as a function of the neighbors of \(c_t\) at time \(t-1\)?
+How do we describe the state of cell \(c_t\) as a function of the neighbors of \(c_t\) and the state of \(c_t\) at time \(t-1\)?
 \begin{itemize}
 \item<2->There are \(2^3 = 8\) neighborhood combinations for any given neighborhood.
 \item<3->Simply create an assignment for each combination!
@@ -127,7 +127,7 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 
 \begin{frame}[label=sec-13]{Interesting Tidbits}
 \begin{itemize}
-\item<1->Rule 30 - Random number genrator for Wolfram language
+\item<1->Rule 30 - Random number generator for Wolfram language
 \item<2->Rule 22 - Sierpinski triangle
 \end{itemize}
 \end{frame}
@@ -167,7 +167,7 @@ How do we describe the state of cell \(c_t\) as a function of the neighbors of \
 \end{frame}
 \begin{frame}[label=sec-18]{Conway's Game of Life Entities}
 \begin{enumerate}
-\item<1->Still lives - entity stays the same throught generations
+\item<1->Still lives - entity stays the same through generations
 \item<2->Oscillators - entity changes shape and returns to original position (periods)
 \item<3->Spaceships - Moving oscillators
 \end{enumerate}
